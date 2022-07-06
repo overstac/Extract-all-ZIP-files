@@ -6,5 +6,5 @@ destination_path = Path("destination")
 
 for path in root_dir.glob("*.zip"):
   with zipfile.ZipFile(path, "r") as zf:
-    final_path= destination_path/ Path(path.stem)
+    final_path= destination_path/ Path(path.stem)                           .stem   use the name of the file for forlder---just the name
     zf.extractall(final_path)
